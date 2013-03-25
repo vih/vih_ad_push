@@ -70,6 +70,9 @@ function vih_ad_push_field_default_fields() {
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png jpg jpeg',
+        'focus' => 0,
+        'focus_lock_ratio' => 0,
+        'focus_min_size' => '',
         'imagecrop' => array(
           'content_width' => 0,
           'subject_overview_thumbs' => 0,
