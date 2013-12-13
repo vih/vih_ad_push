@@ -26,6 +26,12 @@ function vih_ad_push_field_default_field_instances() {
         'type' => 'image',
         'weight' => 2,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'ical' => array(
         'label' => 'above',
         'settings' => array(),
@@ -108,6 +114,12 @@ function vih_ad_push_field_default_field_instances() {
         'type' => 'field_redirection',
         'weight' => 3,
       ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'ical' => array(
         'label' => 'above',
         'settings' => array(),
@@ -166,6 +178,12 @@ function vih_ad_push_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'ical' => array(
         'label' => 'above',
