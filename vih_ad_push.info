@@ -17,7 +17,6 @@ dependencies[] = views_slideshow
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[field_base][] = field_picture
 features[field_base][] = field_redirect_page_to
 features[field_base][] = field_tagline
 features[field_instance][] = node-vih_ad_push-field_picture
