@@ -146,6 +146,8 @@ function vih_ad_push_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = '';
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['pane_category']['name'] = 'VIH Admin';
+  $handler->display->display_options['pane_category']['weight'] = '0';
 
   /* Display: Side */
   $handler = $view->new_display('page', 'Side', 'page_1');
@@ -216,7 +218,7 @@ function vih_ad_push_views_default_views() {
     'vih_ad_push' => 'vih_ad_push',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  $handler->display->display_options['path'] = 'admin/dashboard/pages/ad-push';
+  $handler->display->display_options['path'] = 'admin/dashboard/happening/ad-push';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Ad push';
   $handler->display->display_options['menu']['weight'] = '0';
@@ -235,7 +237,7 @@ function vih_ad_push_views_default_views() {
     t('Content pane'),
     t('Titel'),
     t('Videresend til'),
-    t('View panes'),
+    t('VIH Admin'),
     t('Side'),
     t('Udgivet'),
   );
