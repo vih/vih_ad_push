@@ -10,7 +10,7 @@
 function vih_ad_push_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-vih_ad_push-field_picture'
+  // Exported field_instance: 'node-vih_ad_push-field_picture'.
   $field_instances['node-vih_ad_push-field_picture'] = array(
     'bundle' => 'vih_ad_push',
     'deleted' => 0,
@@ -24,13 +24,23 @@ function vih_ad_push_field_default_field_instances() {
           'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 1,
       ),
       'featured' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'large',
+        ),
+        'type' => 'image',
+        'weight' => 1,
       ),
       'ical' => array(
         'label' => 'above',
@@ -110,7 +120,7 @@ function vih_ad_push_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vih_ad_push-field_redirect_page_to'
+  // Exported field_instance: 'node-vih_ad_push-field_redirect_page_to'.
   $field_instances['node-vih_ad_push-field_redirect_page_to'] = array(
     'bundle' => 'vih_ad_push',
     'default_value' => NULL,
@@ -119,19 +129,27 @@ function vih_ad_push_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'field_redirection',
-        'settings' => array(
-          '404_if_empty' => 1,
-          'code' => 301,
-        ),
-        'type' => 'field_redirection',
-        'weight' => 3,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
       ),
       'featured' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'field_redirection',
+        'settings' => array(
+          '404_if_empty' => FALSE,
+          'code' => 301,
+          'page_restrictions' => 0,
+          'pages' => '',
+        ),
+        'type' => 'field_redirection',
+        'weight' => 2,
       ),
       'ical' => array(
         'label' => 'above',
@@ -164,6 +182,7 @@ function vih_ad_push_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'title' => 'none',
+      'title_label_use_field_label' => FALSE,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 0,
@@ -179,7 +198,7 @@ function vih_ad_push_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-vih_ad_push-field_tagline'
+  // Exported field_instance: 'node-vih_ad_push-field_tagline'.
   $field_instances['node-vih_ad_push-field_tagline'] = array(
     'bundle' => 'vih_ad_push',
     'default_value' => NULL,
@@ -191,12 +210,19 @@ function vih_ad_push_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'featured' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 0,
       ),
       'ical' => array(
